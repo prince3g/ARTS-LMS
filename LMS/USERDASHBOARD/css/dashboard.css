@@ -770,7 +770,7 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     color: #fff !important;
     top: 0;
     left: 0;
-    z-index: 2000;
+    z-index: 2500;
     padding: 100px 40px;
     text-align: center;
     display: none;
