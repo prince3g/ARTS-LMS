@@ -847,7 +847,7 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     width: 400px;
     height: 50px;
     padding: 0px 20px;
-    border-radius: 30px;
+    border-radius: 8px;
     border:2px solid #3F8AEF;
     color: #000;
     font-size: 14px;
@@ -878,10 +878,10 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     text-align: center;
     background-color: #3F8AEF;
     color: #fff;
-    border-radius: 30px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    font-size: 20px;
+    font-size: 17px;
 }
 @media screen and (max-width:450px){
     .search-box button{

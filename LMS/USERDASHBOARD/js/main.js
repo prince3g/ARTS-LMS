@@ -26,3 +26,70 @@
       });
   });
   
+
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileNavToggler = document.querySelector(".mobile-nav-toggler");
+    const closeNavButton = document.querySelector(".moblie-Close-Nav button");
+    const leftNavBar = document.querySelector(".left-nav-bar");
+    const navLinks = document.querySelectorAll(".left-nav-bar a");
+
+    // Function to show navbar
+    mobileNavToggler.addEventListener("click", function () {
+        leftNavBar.classList.add("Show-mobile-left-nav");
+    });
+
+    // Function to hide navbar
+    function hideNavbar() {
+        leftNavBar.classList.remove("Show-mobile-left-nav");
+    }
+
+    // Close button click
+    closeNavButton.addEventListener("click", hideNavbar);
+
+    // Click on any navbar link
+    navLinks.forEach(link => {
+        link.addEventListener("click", hideNavbar);
+    });
+
+    // Click outside the navbar
+    document.addEventListener("click", function (event) {
+        if (!leftNavBar.contains(event.target) && !mobileNavToggler.contains(event.target)) {
+            hideNavbar();
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+  $(".Mobile-search-button").click(function(){
+      $(".search-dropdown-sec").css("display", "block").animate({ opacity: 1 }, 300);
+  });
+
+  $(".search-dropdown-sec h3 button").click(function(){
+      $(".search-dropdown-sec").animate({ opacity: 0 }, 300, function(){
+          $(this).css("display", "none");
+      });
+  });
+});
