@@ -2239,3 +2239,104 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
 .classs-ses-Card-btn a:hover{
     background-color: #dbe8fc !important;
 }
+
+
+
+
+
+
+
+
+
+/* Glandd-Sect */
+
+.Glandd-Sect{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+
+.Glandd-Sect1{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Glandd-Sect1-Part{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.Glandd-Sect1-Part h3{
+    font-size:12px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.Glandd-Sect1-Part ul{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.Glandd-Sect1-Part ul li{
+    position: relative;
+    margin-top: 10px;
+    list-style: disc !important;
+    font-size: 14px;
+}
+
+
+/* Glandd-Sect2 */
+
+.Glandd-Sect2{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.schedule-Box{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    -webkit-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    -moz-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.schedule-Box-Top{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.schedule-Box-Top h2{
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.schedule-Box-Top span{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.schedule-Box-Top span b{
+    font-weight: 700;
+    color: #000;
+}
