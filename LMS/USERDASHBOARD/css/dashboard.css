@@ -2256,14 +2256,45 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 20px;
+}
+
+@media screen and (max-width:800px){
+    .Glandd-Sect{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        gap: 30px !important;
+    }
+
+    .Glandd-Sect1{
+        position: relative !important;
+        top:0px !important;
+    }
 }
 
 
 .Glandd-Sect1{
-    position: relative;
+    position: sticky;
     width: 100%;
     height: auto;
+    min-height: 300px;
+    top: 100px;
+    left: 0;
+    z-index: 10;
+}
+
+.Glandd-Sect1-Box{
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    min-height: inherit;
+    top: inherit;
+    left: inherit;
+    z-index: inherit;
+}
+
+.ujh-header{
+    margin-bottom: 30px;
 }
 
 .Glandd-Sect1-Part{
@@ -2307,12 +2338,6 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     position: relative;
     width: 100%;
     height: auto;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgb(63 138 239 / 8%);
-    -webkit-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
-    -moz-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
-    border-radius: 10px;
-    padding: 20px;
 }
 
 .schedule-Box-Top{
@@ -2339,4 +2364,133 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
 .schedule-Box-Top span b{
     font-weight: 700;
     color: #000;
+}
+
+
+
+
+/* schedule-Box-Card */
+
+.schedule-Box-Card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    -webkit-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    -moz-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    border-radius: 10px;
+    border:2px solid transparent;
+}
+
+.schedule-Box-Card.active{
+    border-color: #3F8AEF !important;
+}
+
+.schedule-Box-Card h5{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+
+.schedule-Box-Card h5 span{
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #666;
+}
+
+.schedule-Box-Card p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.KKh-Driv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.KKh-Driv1{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.KKh-Driv1 h4{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.KKh-Driv1 h4 span{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.KKh-Driv2{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.KKh-Driv2 a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    height: 35px;
+    font-size: 11px;
+    gap: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid #3F8AEF;
+    background-color: transparent;
+    color: #3F8AEF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width:1100px){
+    .KKh-Driv2 a{
+        height: 30px !important;
+        padding: 0px 5px !important;
+        font-size: 10px !important;
+        border-width: 1px !important;
+    }
+}
+
+.KKh-Driv2 a:hover{
+    background-color: #dbe8fc !important;
+}
+
+.KKh-Driv2 span{
+    position: relative;
+    background-color: transparent;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 3px 7px;
+    padding-top: 4px;
+    border-radius: 30px;
 }
