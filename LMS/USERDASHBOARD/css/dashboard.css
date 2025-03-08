@@ -1605,6 +1605,42 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     gap: 10px;
 }
 
+.CCL-Box-Sub-10{
+    position: relative;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.CCL-Box-Sub-10 h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    color: #3F8AEF;
+}
+
+.CCL-Box-Sub-10 h2 span{
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.CCL-Box-Sub-10 h3{
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+}
+
+.CCL-Box-Sub-10 h3 span{
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #666;
+}
+
 .CCL-Box-Sub-1 a{
     position: relative;
     display: inline-flex;
@@ -2067,4 +2103,139 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     position: relative;
     height: auto;
     margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* classs-ses-Grid */
+
+
+.classs-ses-Grid{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    grid-template-rows: auto;
+}
+
+@media screen and (max-width:450px){
+    .classs-ses-Grid{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+.classs-ses-Card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    -webkit-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    -moz-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.classs-ses-Card h2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.classs-ses-Card h2 span{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: transparent;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+.classs-ses-Card h3{
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+.classs-ses-Card p{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.classs-ses-Card p span{
+    display: inline-flex;
+    align-items: center;
+}
+.classs-ses-Card p span i{
+    margin-right: 5px;
+}
+.classs-ses-Card p span b{
+    margin-right: 5px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+.classs-ses-Card-btn{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.classs-ses-Card-btn span{
+    font-size: 12px;
+    color: #3F8AEF;
+}
+
+.classs-ses-Card-btn a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    height: 30px;
+    font-size: 12px;
+    gap: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid #3F8AEF;
+    color: #3F8AEF;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.classs-ses-Card-btn a:hover{
+    background-color: #dbe8fc !important;
 }
