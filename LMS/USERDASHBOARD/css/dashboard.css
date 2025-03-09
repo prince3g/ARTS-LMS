@@ -2234,13 +2234,31 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+.classs-ses-Card-btn span a:hover,
+.classs-ses-Card-btn span a{
+    padding: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+}
 
+.classs-ses-Card-btn span a{
+    text-decoration: underline !important;
+}
+
+.classs-ses-Card-btn span a:hover{
+    text-decoration: none !important;
+}
 
 .classs-ses-Card-btn a:hover{
     background-color: #dbe8fc !important;
 }
 
 
+.classs-ses-Card h6{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 
 
 
