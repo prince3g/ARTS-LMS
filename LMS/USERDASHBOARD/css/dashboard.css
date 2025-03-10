@@ -2094,6 +2094,7 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     border:1px solid transparent;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
+    gap: 5px;
 }
 
 
@@ -2539,4 +2540,312 @@ p,h1,h2,h3,h4,h5,h6,ul,li,a,button,input,span,textarea, select, ol{
     padding: 3px 7px;
     padding-top: 4px;
     border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Proliee-Box */
+
+
+.Proliee-Box{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    -webkit-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    -moz-box-shadow: 0 0 20px rgb(63 138 239 / 8%);
+    border-radius: 10px;
+}
+
+.Proliee-Part1{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    border:1px solid #e2e4e9;
+    padding: 30px;
+    border-radius: 10px;
+}
+@media screen and (max-width:400px){
+    .Proliee-Part2,
+    .Proliee-Part1{
+        padding: 20px !important;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .Proliee-Part1{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .Proliee-Part10{
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.Proliee-Part10{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Proliee-Part100{
+    position: relative;
+}
+
+.Proliee-Part100 img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.Proliee-Part101{
+    position: relative;
+}
+
+.Proliee-Part101 h3{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:400px){
+    .Proliee-Part101 h3{
+        font-size: 17px !important;
+    }  
+}
+.Proliee-Part101 h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.Proliee-Part101 p{
+    font-size: 13px;
+}
+
+.Proliee-Part11{
+    position: relative;
+}
+
+.Proliee-Part11 button{
+    position: relative;
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    white-space: nowrap;
+    border:1px solid #3F8AEF;
+    color: #3F8AEF;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    gap: 8px;
+}
+
+
+.Proliee-Part11 button:hover{
+    background-color: #dbe8fc !important;
+}
+
+
+
+.Proliee-Part2{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border:1px solid #e2e4e9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Proliee-Part2 h2{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:400px){
+    .Proliee-Part2 h2{
+        font-size: 17px !important;
+    }  
+}
+.prolif-Form{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.prolif-Grid{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+@media screen and (max-width:750px){
+    .prolif-Grid{
+        display: block !important;
+    }
+}
+
+.Reg_Input{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.Reg_Input select,
+.Reg_Input textarea,
+.Reg_Input input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border:1px solid #d8d8d8;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+.Reg_Input select::placeholder,
+.Reg_Input textarea::placeholder,
+.Reg_Input input::placeholder{
+    color: #606060;
+}
+.Reg_Input select:focus,
+.Reg_Input textarea:focus,
+.Reg_Input input:focus{
+    border:2px solid  #3F8AEF !important;
+    
+}
+.Reg_Input textarea{
+    height: 150px;
+    resize: none;
+    padding: 20px;
+}
+.Reg_Input input[type="submit"]{
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #3F8AEF;
+    border-color: #3F8AEF;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    width: auto;
+}
+.Reg_Input input[type="submit"]:hover{
+    background-color: #5199f8;
+    border-color: #5199f8;
+}
+@media screen and (max-width:500px){
+  .Reg_Input input[type="submit"]{
+    font-size: 15px !important;
+}  
+}
+.Reg_Input a{
+    color: #3F8AEF;
+}
+
+.Reg_Input a:hover{
+    text-decoration: underline !important;
+}
+
+.Reg_Input label{
+    font-size: 13px !important;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Noticte-MM-Sec */
+
+.Noticte-MM-Sec{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding:0px 30px;
+}
+
+@media screen and (max-width:500px){
+    .Noticte-MM-Sec{
+        padding: 0px 20px !important;
+    }
+}
+
+.Notti-Card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    border-bottom: 1px solid #e6e7e9;
+    margin-top: 20px;
+}
+
+.Notti-Card:first-child{
+    margin-top: 0px !important;
+}
+
+.Notti-Card:last-child{
+    border-bottom: none !important;
+}
+
+.Top-Notti-Card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.Notti-Card p{
+    font-size: 14px;
+}
+
+.Top-Notti-Card h3{
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+}
+
+.Top-Notti-Card span{
+    font-size: 11px;
 }

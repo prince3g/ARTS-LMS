@@ -2179,7 +2179,7 @@
 }
 .Reg_Input input[type="submit"]{
     cursor: pointer;
-    font-size: 18px;
+    font-size: 15px;
     background-color: #3F8AEF;
     border-color: #3F8AEF;
     color: #fff;
